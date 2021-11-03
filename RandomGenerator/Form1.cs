@@ -16,8 +16,7 @@ namespace RandomGenerator
         }
         private void bGenerate_Click(object sender, EventArgs e)
         {
-            if(int.TryParse(numMin.Text, out int min) == false || int.TryParse(numMax.Text, out int max) == false
-                || min < -9999999 || min > 99999999 || max < -9999999 || max > 99999998 || max <= min)
+            if(int.TryParse(numMin.Text, out int min) == false || int.TryParse(numMax.Text, out int max) == false|| max <= min)
             {
                 MessageBox.Show("You input wrong values!", "Value error!");
                 return;
